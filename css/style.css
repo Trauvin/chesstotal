@@ -28,10 +28,14 @@
 
 .menu-nav a {
   font-family: "Nunito", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #fff;
-  padding-left: 10px;
+  padding: 15px;
+}
+
+.menu-nav a:hover {
+  color: #0800ff;
 }
 
 /* Introdução */
@@ -130,7 +134,7 @@
 
 @media (max-width: 720px) {
   .principios-img img {
-    margin-left: 1.5em;
+    justify-content: center;
   }
 
   .principios-info p {
@@ -142,6 +146,7 @@
 .pecas {
   grid-template-columns: 90px 250px 400px 200px;
   grid-column: 2 / 4;
+  display: flex;
   width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -155,7 +160,7 @@
   cursor: pointer;
 }
 .lista-pecas img {
-  max-width: 300px;
+  max-width: 181px;
   max-height: 300px;
 }
 
@@ -216,9 +221,16 @@
   max-width: 300px;
 }
 
-.move-img img {
-  max-width: 181px;
-  max-height: 301px;
+.move-peca img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.move-peca div {
+  display: none;
+}
+
+.move-peca div.ativo {
+  display: block;
 }
 @keyframes show {
   from {
