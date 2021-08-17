@@ -140,7 +140,7 @@
 
 /* Peças */
 .pecas {
-  grid-template-columns: 90px 250px 400px 80px;
+  grid-template-columns: 90px 250px 400px 200px;
   grid-column: 2 / 4;
   width: 960px;
   margin: 0 auto;
@@ -199,13 +199,6 @@
   margin-right: 7px;
 }
 
-.xadrez-peca-info p {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1.2em;
-  line-height: 1.2;
-  padding: 10px 0 10px 0;
-}
-
 .xadrez-peca-info section {
   display: none;
   animation: show 0.5s forwards;
@@ -215,6 +208,18 @@
   display: block;
 }
 
+.xadrez-peca-info p {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 10px 0 10px 0;
+  max-width: 300px;
+}
+
+.move-img img {
+  max-width: 181px;
+  max-height: 301px;
+}
 @keyframes show {
   from {
     opacity: 0;
