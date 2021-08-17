@@ -242,3 +242,64 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@media (max-width: 720px) {
+  .pecas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .lista-pecas img {
+    justify-content: flex-start;
+  }
+
+  .xadrez-peca-info p {
+    font-size: 1em;
+    max-width: 150px;
+    flex: 1 1 150px;
+  }
+}
+
+/* Aberturas */
+
+.xadrez-aberturas {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.aberturas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.aberturas h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.aberturas h3::before {
+  content: "";
+  width: 6px;
+  height: 19px;
+  display: inline-block;
+  margin: 0 auto;
+  background: cornflowerblue;
+  margin-right: 10px;
+}
+
+.aberturas p {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 30px;
+  line-height: 1.3;
+  color: rgba(0, 0, 0, 0.74);
+}
+.aberturas img {
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
