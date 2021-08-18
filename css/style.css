@@ -89,11 +89,6 @@ p {
 
 /* Xadrez */
 
-/* .container {
-  width: 960px;
-  margin: 0 auto;
-} */
-
 .titulo {
   font-family: "Nunito", sans-serif;
   font-size: 2em;
@@ -341,7 +336,7 @@ p {
 .jogador {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  /* justify-content: space-between; */
   padding: 60px 0;
 }
 
@@ -444,4 +439,93 @@ p {
 
 .jogador-info dd.ativo {
   display: block;
+}
+
+/* Canais */
+.canais {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.canais h3 {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.canais h3::before {
+  content: "";
+  width: 6px;
+  height: 16px;
+  display: inline-block;
+  background: cyan;
+  margin: 0 5px 0 5px;
+}
+
+.canais img {
+  width: 300px;
+  height: 300px;
+  /* border-radius: 50%; */
+}
+
+.canais p {
+  font-size: 1.1em;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  max-width: 300px;
+  padding-top: 20px;
+}
+
+/* Quebra */
+
+.quebra {
+  background: url("/img/bg-quebra.png") no-repeat center;
+  background-size: cover;
+  /* width: 100x; */
+  height: 200px;
+  margin-top: 40px;
+}
+
+.quebra blockquote {
+  width: 960px;
+  margin: 0 auto;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 1.1em;
+  color: #fff;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.quebra p {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.quebra p::before,
+.quebra p::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  display: block;
+  background: #fff;
+  margin: 5px auto;
+}
+
+.quebra cite {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.footer {
+  background: #8251ff;
+  height: 90px;
+}
+
+.footer p {
+  text-align: center;
+  padding-top: 20px;
+  color: #0800ff;
 }
