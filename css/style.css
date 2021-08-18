@@ -140,6 +140,7 @@ p {
 @media (max-width: 720px) {
   .principios-img img {
     justify-content: center;
+    /* padding-left: 20px; */
   }
 
   .principios-info p {
@@ -282,8 +283,8 @@ p {
   font-family: "Nunito", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  padding-bottom: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .aberturas h3::before {
@@ -309,24 +310,48 @@ p {
   padding-bottom: 20px;
 }
 /* Jogadores */
+
+.titulo-branco {
+  font-family: "Nunito", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.titulo-branco::after {
+  content: "";
+  height: 4px;
+  width: 120px;
+  display: block;
+  margin: 5px auto;
+  background: #fff;
+}
+
+.bg-dark {
+  background: #000;
+}
 .jogadores {
   width: 960px;
   margin: 0 auto;
+  color: #fff;
 }
 
 .jogador {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding: 20px 0 20px 0;
+  padding: 60px 0;
 }
 
-.jogador:nth-of-type(1) {
+.jogador:nth-of-type(even) {
   /* justify-content: center; */
 }
 
 .jogador img {
-  width: 320px;
+  max-width: 300px;
+  max-height: 350px;
 }
 
 .jogador h3 {
@@ -334,6 +359,7 @@ p {
   font-size: 1.5em;
   font-weight: bold;
   padding: 0 30px 0 30px;
+  color: #fff;
   /* text-align: center; */
 }
 
@@ -387,9 +413,9 @@ p {
 .jogador-info ul {
   display: none;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  padding: 10px 0;
   line-height: 1.4em;
-  max-width: 400px;
+  max-width: 280px;
+  font-size: 0.8em;
 }
 
 .jogador-info li::before {
@@ -404,14 +430,15 @@ p {
 }
 
 .jogador-info ul.ativo {
+  padding-top: 10px;
   display: block;
 }
 
 .jogador-info dd {
   display: none;
   font-family: "Atkinson Hyperlegible", sans-serif;
-  font-size: 1.1em;
-  max-width: 400px;
+  font-size: 1em;
+  max-width: 280px;
   padding-top: 10px;
 }
 

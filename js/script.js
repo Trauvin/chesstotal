@@ -27,7 +27,7 @@ function clickShowPiece() {
 clickShowPiece()
 
 function infoPlayer() {
-const jogadores = document.querySelectorAll('.jogador-info dt')
+  const jogadores = document.querySelectorAll('.jogador-info dt')
 
   jogadores[0].classList.add('ativo')
   jogadores[0].nextElementSibling.classList.add('ativo')
