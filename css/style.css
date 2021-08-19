@@ -128,18 +128,22 @@ p {
 .principios-img img {
   width: 400px;
   height: 400px;
-  flex: 1 1 480px;
+  /* flex: 1 1 480px; */
   margin-left: 40px;
 }
 
 @media (max-width: 720px) {
-  .principios-img img {
-    justify-content: center;
-    /* padding-left: 20px; */
+  .xadrez-principios {
+    flex-direction: column;
+  }
+  .principios-info p {
+    margin-left: 10px;
   }
 
-  .principios-info p {
-    padding: 0 10px 0 10px;
+  .principios-img img {
+    /* justify-content: center; */
+    /* margin: 0 auto; */
+    margin: 0 20px 0 25px;
   }
 }
 
@@ -147,7 +151,6 @@ p {
 .pecas {
   grid-template-columns: 90px 250px 400px 200px;
   grid-column: 2 / 4;
-  display: flex;
   width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -258,6 +261,10 @@ p {
     font-size: 1em;
     max-width: 150px;
     flex: 1 1 150px;
+  }
+
+  .move-peca img {
+    /* justify-content: safe; */
   }
 }
 
@@ -446,7 +453,6 @@ p {
   width: 960px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -479,6 +485,17 @@ p {
   padding-top: 20px;
 }
 
+@media (max-width: 720px) {
+  .canais {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 70px;
+  }
+
+  .canais h3 {
+    padding-top: 20px;
+  }
+}
 /* Quebra */
 
 .quebra {
@@ -487,6 +504,7 @@ p {
   /* width: 100x; */
   height: 200px;
   margin-top: 40px;
+  display: flex;
 }
 
 .quebra blockquote {
