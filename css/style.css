@@ -138,6 +138,7 @@ p {
   }
   .principios-info p {
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .principios-img img {
@@ -264,7 +265,7 @@ p {
   }
 
   .move-peca img {
-    /* justify-content: safe; */
+    display: none;
   }
 }
 
@@ -311,6 +312,15 @@ p {
   margin: 0 auto;
   padding-bottom: 20px;
 }
+
+@media (max-width: 720px) {
+  .aberturas h3 {
+    margin-left: 5px;
+  }
+  .aberturas p {
+    margin: 0 10px 0 10px;
+  }
+}
 /* Jogadores */
 
 .titulo-branco {
@@ -343,12 +353,7 @@ p {
 .jogador {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   padding: 60px 0;
-}
-
-.jogador:nth-of-type(even) {
-  /* justify-content: center; */
 }
 
 .jogador img {
@@ -446,6 +451,26 @@ p {
 
 .jogador-info dd.ativo {
   display: block;
+}
+
+@media (max-width: 720px) {
+  html {
+    overflow-x: hidden;
+  }
+  .jogadores {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .titulo-branco {
+    font-size: 1.5em;
+  }
+  .jogador {
+    flex: 1 1 500px;
+  }
+  .jogador img {
+    width: 100px;
+    margin-left: 10px;
+  }
 }
 
 /* Canais */
