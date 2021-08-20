@@ -3,34 +3,38 @@ p {
 }
 
 /* Header */
-.menu-bg {
+#header {
+  height: 70px;
   background: #8251ff;
-  /* background: #000; */
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
-  margin: 0 auto;
-  max-width: 960px;
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: calc((100% - 960px) / 2); /* Macete bg */
 }
 
-.menu-logo a {
+#logo {
   font-family: "Nunito", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   color: #fff;
+  width: 960px;
+  margin: 0 auto;
 }
 
-.menu-nav ul {
+#menu {
   display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 0.5rem;
 }
 
-.menu-nav a {
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#menu a {
   font-family: "Nunito", sans-serif;
   font-size: 1.2em;
   font-weight: bold;
@@ -38,10 +42,82 @@ p {
   padding: 15px;
 }
 
-.menu-nav a:hover {
+#menu a:hover {
   color: #0800ff;
 }
 
+#btn-mobile {
+  display: none;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+@media (max-width: 720px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #8251ff;
+    z-index: 1000;
+    height: 0px;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #fff;
+  }
+  #hamburger {
+    width: 20px;
+    border-top: 2px solid;
+    margin-right: 3px;
+    /* color: cyan; */
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    display: block;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
 /* Introdução */
 .introducao {
   background: url("../img/chess-intro.jpg") no-repeat center;
@@ -568,7 +644,14 @@ p {
 }
 
 .footer p {
+  font-family: "Nunito", sans-serif;
   text-align: center;
   padding-top: 20px;
-  color: #0800ff;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
 }

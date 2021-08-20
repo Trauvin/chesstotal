@@ -12,20 +12,20 @@
   <title>ChessTotal</title>
 </head>
 <body>
-  <header class="menu-bg">
-    <div class="menu">
-      <div class="menu-logo">
-        <a href="#">ChessToTAL</a>
-      </div>
-      <nav class="menu-nav">
-        <ul>
-          <li><a href="#principios">Principios</a></li>
-          <li><a href="#pecas">Peças</a></li>
-          <li><a href="#aberturas">Aberturas</a></li>
-          <li><a href="#jogadores">Jogadores</a></li>
-        </ul>
-      </nav>
-    </div>
+
+  <header id="header">
+    <a id="logo" href="#">ChessToTAL</a>   
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="#principios">Principios</a></li>
+        <li><a href="#pecas">Peças</a></li>
+        <li><a href="#aberturas">Aberturas</a></li>
+        <li><a href="#jogadores">Jogadores</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="introducao">
@@ -280,7 +280,7 @@
 
   <footer class="footer">
     <p>Chess Total @todos os direitos reservados</p>
-    <p>Desenvolvido por Matheus Galote</p>
+    <p>Desenvolvido por <a href="https://github.com/Trauvin">Matheus Galote</a></p>
   </footer>
   <script src="js/script.js"></script>
 </body>
