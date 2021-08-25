@@ -214,19 +214,16 @@ p {
 }
 
 @media (max-width: 720px) {
-  .xadrez-principios {
+  /* .xadrez-principios {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .principios-info p {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .principios-img img {
-    /* justify-content: center; */
-    /* margin: 0 auto; */
-    margin: 0 20px 0 25px;
-  }
+  } */
 }
 
 /* Peças */
@@ -676,10 +673,19 @@ p {
   }
   .xadrez-principios {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .principios-info p {
+    padding-left: 10px;
+    padding-right: 20px;
+    /* justify-content: center; */
   }
   .principios-img img {
     width: 310px;
+    margin: 0 auto;
   }
   .lista-pecas img {
     width: 120px;
@@ -706,5 +712,8 @@ p {
   }
   .canais p {
     text-align: center;
+  }
+  .quebra blockquote {
+    padding-top: 20px;
   }
 }

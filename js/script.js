@@ -83,3 +83,11 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu)
 btnMobile.addEventListener('touchstart', toggleMenu)
+
+function removeMenuMobile() {
+  const menuLink = document.querySelectorAll('.menu__link')
+
+  function linkAction() {
+    const menu = document.querySelector('#menu')
+  }
+}
