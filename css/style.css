@@ -1,3 +1,8 @@
+:root {
+  --title-font-family: "Nunito", sans-serif;
+  --text-font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
 p {
   color: rgba(0, 0, 0, 0.74);
 }
@@ -11,11 +16,11 @@ p {
   padding: 1rem;
   box-sizing: border-box;
   justify-content: space-between;
-  padding: calc((100% - 960px) / 2); /* Macete bg */
+  padding: 50px calc((100% - 960px) / 2); /* Macete bg */
 }
 
 #logo {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--title-font-family);
   font-size: 2.5em;
   font-weight: bold;
   color: #fff;
@@ -48,7 +53,7 @@ p {
 
 #btn-mobile {
   display: none;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: var(--text-font-family);
 }
 
 @media (max-width: 720px) {
@@ -543,6 +548,7 @@ p {
   .jogador {
     flex: 1 1 500px;
   }
+
   .jogador img {
     width: 100px;
     margin-left: 10px;
@@ -654,4 +660,51 @@ p {
   color: #fff;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+/* small devices */
+@media screen and (max-width: 360px) {
+  .intro-text h1 {
+    font-size: 2em;
+    display: flex;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+  .intro-text blockquote {
+    margin-top: 0;
+  }
+  .xadrez-principios {
+    display: flex;
+    flex-direction: row;
+  }
+  .principios-img img {
+    width: 310px;
+  }
+  .lista-pecas img {
+    width: 120px;
+  }
+  .xadrez-aberturas h2 {
+    padding-top: 0px;
+  }
+  .titulo-branco {
+    padding-bottom: 10px;
+  }
+  .jogador-descricao dd {
+    width: 180px;
+  }
+  .jogador ul {
+    width: 180px;
+  }
+  .jogador h3 {
+    font-size: 1.2em;
+  }
+  .canais {
+    display: flex;
+    padding-right: 20px;
+    padding-left: 29px;
+  }
+  .canais p {
+    text-align: center;
+  }
 }
